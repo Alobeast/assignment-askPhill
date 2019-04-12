@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-left {
+  grid-area: top-left;
+  background-color: green;
+
+}
+
+.bottom-left {
+  grid-area: bottom-left;
+  background-color: red;
+
+}
+
+.top-right {
+  grid-area: top-right;
+  background-color: red;
+
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+  background-color: green;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 40vh 60vh 40vh 60vh;
+  grid-template-areas:
+  "top-right"
+  "top-left"
+  "bottom-left"
+  "bottom-right";
+}
+
+@media(min-width: 769px) {
+ .grid {
+  display: grid;
+  width: 96vw;
+  height: 94vh;
+  grid-template-columns: 47vw 47vw;
+  grid-template-rows: 39vh 18vh 39vh;
+  grid-template-areas:
+  "top-left top-right"
+  "top-left bottom-right"
+  "bottom-left bottom-right";
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+
+
+
+
+
+
+
