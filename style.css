@@ -66,16 +66,17 @@ p {
 
 .info-grid {
   position: absolute;
-  left: 13vw;
-  bottom: 3vh;
+  left: 10vw;
+  bottom: 3.5vh;
   font-weight: lighter;
   color: #1D3790;
   display: grid;
   grid-template-columns: 30vw 45vw;
-  grid-template-rows: 17vh 8vh;
+  grid-template-rows: 20vh 5vh;
   grid-template-areas:
   "main-info main-info"
   "info-one info-two";
+
 }
 
 .main-info {
@@ -130,6 +131,7 @@ p {
     font-weight: lighter;
     opacity: 0.8;
     text-shadow:2px 2px 2px black;
+    visibility: hidden;
 }
 
 .video-title {
@@ -192,7 +194,7 @@ p {
 
 /*DESKTOP DISPLAY*/
 
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   body {
     display: flex;
     justify-content: center;
@@ -246,7 +248,7 @@ p {
     height: 100%;
     object-fit: cover;
     position:absolute;
-    bottom: -1%;
+    bottom: -15%;
   }
 
   .overlay {
@@ -268,7 +270,7 @@ p {
   }
 }
 
-@media(min-width: 700px) {
+/*@media(min-width: 700px) {
   .video {
     bottom: -10%;
   }
@@ -278,7 +280,7 @@ p {
   .video {
     bottom: -20%;
   }
-}
+}*/
 
 
 
