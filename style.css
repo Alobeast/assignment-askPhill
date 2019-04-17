@@ -23,11 +23,10 @@ p {
   "bottom-right";
 }
 
-/*TOP LEFT*/
+/*INSTA PICTURE*/
 
 .top-left {
   grid-area: top-left;
-  background-color: white;
   position: relative;
 }
 
@@ -37,7 +36,7 @@ p {
 }
 
 .insta-logo {
-  font-size: 2.6vw;
+  font-size: 2.8vw;
 }
 
 .instaname {
@@ -46,11 +45,11 @@ p {
   color: white;
   position: absolute;
   left: 5vw;
-  bottom: 1.5vh;
-  font-size: 1.9vw;
+  bottom: 1.6vh;
+  font-size: 1.4vw;
 }
 
-/*BOTTOM LEFT*/
+/*INFO SECTION*/
 
 .bottom-left {
   grid-area: bottom-left;
@@ -67,10 +66,12 @@ p {
 .info-grid {
   position: absolute;
   left: 13vw;
-  bottom: 7vh;
+  bottom: 2vh;
+  font-weight: lighter;
+  color: #1D3790;
   display: grid;
-  grid-template-columns: 25vw 45vw;
-  grid-template-rows: 20vh 5vh;
+  grid-template-columns: 25vw 55vw;
+  grid-template-rows: 17vh 8vh;
   grid-template-areas:
   "main-info main-info"
   "info-one info-two";
@@ -87,44 +88,35 @@ p {
   grid-area: info-two;
 }
 
-.info-grid p {
-  font-weight: lighter;
-  color: #1D3790;
-}
-
-p.info-title {
+.info-title {
+  font-size: 5.5vw;
   margin-bottom: 1vh;
 }
 
-p.info-sub {
+.info-sub {
+  font-size: 3vw;
   margin-bottom: 0.5vh;
 }
 
-.info-title {
-  font-size: 5vw;
-}
-
-.info-sub {
-  font-size: 2.5vw;
-  font-weight: lighter;
-}
-
-/*TOP RIGHT*/
+/*VIDEO*/
 
 .top-right {
   grid-area: top-right;
-  background-image: url("stupidkitten.jpg");
+  background-image: url("chuck.jpg");
   background-position: center;
   background-size: cover;
   background-color: white;
   position:relative;
+  overflow: hidden;
 }
 /*while video is loading background image will be displayed*/
 
 .video {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  position:absolute;
+  bottom: -30%;
 }
 
 .overlay {
@@ -134,27 +126,25 @@ p.info-sub {
     right: 8vw;
     z-index: 1;
     color: white;
-    opacity: 0.7;
+    font-weight: lighter;
+    opacity: 0.8;
+    text-shadow:2px 2px 2px black;
 }
 
 .video-title {
   font-size: 6vw;
-  text-shadow:2px 2px 2px black;
 }
 
 .video-sub {
   padding-top: 2vh;
   font-size: 3.5vw;
-  font-weight: lighter;
-  text-shadow:2px 2px 2px black;
 }
 
-/*BOTTOM RIGHT*/
+/*PRODUCT PICTURE*/
 
 .bottom-right {
   grid-area: bottom-right;
   background-color: #F6F6F6;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,7 +155,7 @@ p.info-sub {
 .sock {
   width:80%;
   height:80%;
-  z-index: 10;
+  z-index: 1;
   position: relative;
 }
 
@@ -177,6 +167,7 @@ p.info-sub {
   left: -62%;
   bottom: 31%;
 }
+/*All 3 lines same size, start from same point*/
 
 .left-line {
   transform: rotate(35deg);
@@ -193,10 +184,6 @@ p.info-sub {
 }
 
 
-
-
-
-
 /*DESKTOP DISPLAY*/
 
 @media(min-width: 600px) {
@@ -206,6 +193,7 @@ p.info-sub {
     align-items: center;
   }
 
+  /*GRID*/
   .general-grid {
     display: grid;
     grid-template-columns: 40vw 40vw;
@@ -216,26 +204,23 @@ p.info-sub {
     "bottom-left bottom-right";
   }
 
+  /*TOP LEFT / INSTA PICTURE*/
   .insta-logo {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
   }
 
   .instaname {
-    display: flex;
-
-    color: white;
-    position: absolute;
     left: 2.9vw;
     bottom: 3.1vh;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
   }
 
+  /*BOTTOM LEFT / INFO SECTION*/
   .info-grid {
   left: 3vw;
-  bottom: 5vh;
-  display: grid;
-  grid-template-columns: 10vw 18vw;
-  grid-template-rows: 19vh 4vh;
+  bottom: 3vh;
+  grid-template-columns: 8vw 20vw;
+  grid-template-rows: 17vh 6vh;
   grid-template-areas:
   "main-info main-info"
   "info-one info-two";
@@ -246,14 +231,22 @@ p.info-sub {
   }
 
   .info-sub {
-  font-size: 0.7vw;
-  font-weight: lighter;
+  font-size: 0.8vw;
+  }
+
+  /*TOP RIGHT / VIDEO*/
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position:absolute;
+    bottom: -1%;
   }
 
   .overlay {
     bottom: 6vh;
     left: 2vw;
-    right: 7vw;
+    right: 12vw;
   }
 
   .video-title {
@@ -263,13 +256,23 @@ p.info-sub {
 
   .video-sub {
     padding-top: 2vh;
-    font-size: 1.1vw;
+    font-size: 0.9vw;
     font-weight: lighter;
     text-shadow:1px 1px 1px black;
   }
 }
 
+@media(min-width: 700px) {
+  .video {
+    bottom: -10%;
+  }
+}
 
+@media(min-width: 830px) {
+  .video {
+    bottom: -20%;
+  }
+}
 
 
 
