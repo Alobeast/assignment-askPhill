@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: white;
   font-family: 'Roboto', sans-serif;
+  overflow: scroll;
 }
 
 p {
@@ -66,11 +67,11 @@ p {
 .info-grid {
   position: absolute;
   left: 13vw;
-  bottom: 2vh;
+  bottom: 3vh;
   font-weight: lighter;
   color: #1D3790;
   display: grid;
-  grid-template-columns: 25vw 55vw;
+  grid-template-columns: 30vw 45vw;
   grid-template-rows: 17vh 8vh;
   grid-template-areas:
   "main-info main-info"
@@ -89,12 +90,12 @@ p {
 }
 
 .info-title {
-  font-size: 5.5vw;
+  font-size: 5.1vw;
   margin-bottom: 1vh;
 }
 
 .info-sub {
-  font-size: 3vw;
+  font-size: 2.5vw;
   margin-bottom: 0.5vh;
 }
 
@@ -144,7 +145,7 @@ p {
 
 .bottom-right {
   grid-area: bottom-right;
-  background-color: #F6F6F6;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,6 +158,11 @@ p {
   height:80%;
   z-index: 1;
   position: relative;
+}
+
+.sock {
+  -webkit-filter: drop-shadow(2px 30px 15px #222 );
+  filter: drop-shadow(0px 30px 20px #333);
 }
 
 .line {
