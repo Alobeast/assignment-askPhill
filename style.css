@@ -106,7 +106,6 @@ p {
 .top-right {
   grid-area: top-right;
   position:relative;
-  overflow: hidden;
 }
 
 .video {
@@ -141,7 +140,7 @@ p {
 
 .bottom-right {
   grid-area: bottom-right;
-  background-color: #FFFFFF;
+  background-color: #F6F6F6;
   display: flex;
   justify-content: center;
   align-items: center;
