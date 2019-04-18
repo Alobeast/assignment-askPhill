@@ -37,7 +37,7 @@ p {
 }
 
 .insta-logo {
-  font-size: 2.8vw;
+  font-size: 3vw;
 }
 
 .instaname {
@@ -45,9 +45,9 @@ p {
   align-items: center;
   color: white;
   position: absolute;
-  left: 5vw;
-  bottom: 1.6vh;
-  font-size: 1.4vw;
+  left: 5%;
+  bottom: 3%;
+  font-size: 1.5vw;
 }
 
 /*INFO SECTION*/
@@ -66,13 +66,13 @@ p {
 
 .info-grid {
   position: absolute;
-  left: 10vw;
-  bottom: 3.5vh;
+  left: 10%;
+  bottom: 10%;
   font-weight: lighter;
   color: #1D3790;
   display: grid;
-  grid-template-columns: 30vw 45vw;
-  grid-template-rows: 20vh 5vh;
+  grid-template-columns: 23vw 45vw;
+  grid-template-rows: 21vh 7vh;
   grid-template-areas:
   "main-info main-info"
   "info-one info-two";
@@ -123,9 +123,9 @@ p {
 
 .overlay {
     position:absolute;
-    bottom: 4vh;
-    left: 8vw;
-    right: 8vw;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
     z-index: 1;
     color: white;
     font-weight: lighter;
@@ -218,16 +218,16 @@ p {
   }
 
   .instaname {
-    left: 2.9vw;
-    bottom: 3.1vh;
+    left: 8%;
+    bottom: 5%;
     font-size: 0.7vw;
   }
 
   /*BOTTOM LEFT / INFO SECTION*/
   .info-grid {
-  left: 3vw;
-  bottom: 3vh;
-  grid-template-columns: 8vw 20vw;
+  left: 10%;
+  bottom: 10%;
+  grid-template-columns: 7vw 20vw;
   grid-template-rows: 17vh 6vh;
   grid-template-areas:
   "main-info main-info"
@@ -252,9 +252,9 @@ p {
   }
 
   .overlay {
-    bottom: 6vh;
-    left: 2vw;
-    right: 12vw;
+    bottom: 13%;
+    left: 10%;
+    right: 25%;
   }
 
   .video-title {
@@ -270,17 +270,6 @@ p {
   }
 }
 
-/*@media(min-width: 700px) {
-  .video {
-    bottom: -10%;
-  }
-}
-
-@media(min-width: 830px) {
-  .video {
-    bottom: -20%;
-  }
-}*/
 
 
 
